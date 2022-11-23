@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>titulo</title>
+    <link rel="stylesheet" href="css/build.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body class="bg-gray-700">
+    <section class="conteudo" >
+      <div class="calculator rounded-md bg-matte-black text-text-white p-5 absolute top-1/2 left-1/2 w-80" style="transform: translate(-50%, -50%);">
+        
+        <p data-previousOp class=" h-7 text-text-white text-right text-xl" style="word-wrap: break-word ;"></p>
+        <p data-currentOp class=" h-11 text-text-white text-right text-3xl" style="word-wrap: break-word ;"></p>
+        
+        <div id="campo-botao" class=" grid gap-4" style="grid-template-columns: 1fr 1fr 1fr 1fr ">
+          <button data-clear class="number-button-special" style="transition: all 300ms ease-in-out;">AC</button>
+          <button data-backspace ><i class="m-1 p-4 bg-light-black fas fa-backspace text-text-white font-medium hover:bg-hover-black" style="transition: all 300ms ease-in-out ;"></i></button>
+          <button data-operation-button class="operation-button" style="transition: all 300ms ease-in-out ;" >÷</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">7</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">8</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">9</button>
+          <button data-operation-button class="operation-button" style="transition: all 300ms ease-in-out ;">*</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">4</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">5</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">6</button>
+          <button data-operation-button class="operation-button" style="transition: all 300ms ease-in-out ;" >-</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">1</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">2</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">3</button></td>
+          <button data-operation-button class="operation-button" style="transition: all 300ms ease-in-out ;">+</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">0</button>
+          <button data-number class="number-button" style="transition: all 300ms ease-in-out ;">.</button>
+          <button data-equal class="number-button-special" style="transition: all 300ms ease-in-out ;" >=</button>
+          
+        </div>
+      </div>
+    </section>
+</html>
